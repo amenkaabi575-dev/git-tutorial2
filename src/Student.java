@@ -38,5 +38,13 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+    public int getAge() {
+        System.out.println(age);
+        return age;
+    }
 
+    public void setAge(int age) {
+        System.out.println(age);
+        this.age = age;
+    }
 }
