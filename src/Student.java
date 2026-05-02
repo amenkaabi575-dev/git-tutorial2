@@ -40,10 +40,12 @@ public class Student {
     }
 
     public int getAge() {
+        System.out.println(age);
         return age;
     }
 
     public void setAge(int age) {
+        System.out.println(age);
         this.age = age;
     }
 }
