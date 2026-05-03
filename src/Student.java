@@ -4,15 +4,17 @@ public class Student {
     private String firstName;
     private String lastName;
     private int age;
+    private School school;
 
     public Student() {
     }
 
-    public Student(long id, String firstName, String lastName, int age) {
+    public Student(long id, String firstName, String lastName, int age, School school) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.school = school;
     }
 
     public long getId() {
@@ -48,4 +50,14 @@ public class Student {
         System.out.println(age);
         this.age = age;
     }
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+
 }
