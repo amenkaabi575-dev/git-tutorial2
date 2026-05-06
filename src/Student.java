@@ -5,16 +5,18 @@ public class Student {
     private String lastName;
     private int age;
     private School school;
+    private Teacher teacher;
 
     public Student() {
     }
 
-    public Student(long id, String firstName, String lastName, int age, School school) {
+    public Student(long id, String firstName, String lastName, int age, School school, Teacher teacher) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.school = school;
+        this.teacher = teacher;
     }
 
     public long getId() {
@@ -59,5 +61,11 @@ public class Student {
         this.school = school;
     }
 
+    public Teacher getTeacher() {
+        return teacher;
+    }
 
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
 }
